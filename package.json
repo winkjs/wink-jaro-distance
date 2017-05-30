@@ -1,0 +1,42 @@
+{
+  "name": "wink-jaro-distance",
+  "version": "1.0.0",
+  "description": "An Implementation of Jaro Distance Algorithm by Matthew A. Jaro",
+  "keywords": [
+    "Jaro",
+    "Jaro Distance",
+    "Jaro Similarity",
+    "String Matching",
+    "NLP",
+    "Natural Language Processing"
+  ],
+  "main": "src/wink-jaro-distance.js",
+  "scripts": {
+    "pretest": "npm run lint && npm run hint",
+    "test": "istanbul cover _mocha ./test/",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "docs": "docco -o ./docs/ ./src/*.js",
+    "hint": "jshint ./src/*.js ./test/*.js",
+    "lint": "eslint ./src/*.js ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decisively/wink-jaro-distance.git"
+  },
+  "author": "Sanjaya Kumar Saxena",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/decisively/wink-jaro-distance/issues"
+  },
+  "homepage": "https://github.com/decisively/wink-jaro-distance#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
+    "docco": "^0.7.0",
+    "eslint": "^3.13.1",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "mocha": "^3.1.0",
+    "mocha-lcov-reporter": "^1.2.0"
+  }
+}
