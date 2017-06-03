@@ -3,7 +3,7 @@
 
 > An Implementation of [Jaro Distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance#Jaro_distance) Algorithm by Matthew A. Jaro
 
-### [![Build Status](https://api.travis-ci.org/decisively/wink-jaro-distance.svg?branch=master)](https://travis-ci.org/decisively/wink-jaro-distance) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-jaro-distance/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-jaro-distance?branch=master)
+### [![Build Status](https://api.travis-ci.org/decisively/wink-jaro-distance.svg?branch=master)](https://travis-ci.org/decisively/wink-jaro-distance) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-jaro-distance/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-jaro-distance?branch=master) [![devDependencies Status](https://david-dm.org/decisively/wink-jaro-distance/dev-status.svg)](https://david-dm.org/decisively/wink-jaro-distance?type=dev)
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
