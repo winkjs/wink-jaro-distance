@@ -1,6 +1,6 @@
 {
   "name": "wink-jaro-distance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Implementation of Jaro Distance Algorithm by Matthew A. Jaro",
   "keywords": [
     "Jaro",
@@ -42,5 +42,5 @@
     "mocha": "^3.1.0",
     "mocha-lcov-reporter": "^1.2.0"
   },
-  "runkitExampleFilename": "runkit/example.js"  
+  "runkitExampleFilename": "runkit/example.js"
 }
