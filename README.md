@@ -2,13 +2,13 @@
 
 > An Implementation of [Jaro Distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance#Jaro_distance) Algorithm by Matthew A. Jaro
 
-### [![Build Status](https://api.travis-ci.org/decisively/wink-jaro-distance.svg?branch=master)](https://travis-ci.org/decisively/wink-jaro-distance) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-jaro-distance/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-jaro-distance?branch=master) [![devDependencies Status](https://david-dm.org/decisively/wink-jaro-distance/dev-status.svg)](https://david-dm.org/decisively/wink-jaro-distance?type=dev)
+### [![Build Status](https://api.travis-ci.org/decisively/wink-jaro-distance.svg?branch=master)](https://travis-ci.org/decisively/wink-jaro-distance) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-jaro-distance/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-jaro-distance?branch=master) [![Inline docs](http://inch-ci.org/github/decisively/wink-jaro-distance.svg?branch=master)](http://inch-ci.org/github/decisively/wink-jaro-distance) [![devDependencies Status](https://david-dm.org/decisively/wink-jaro-distance/dev-status.svg)](https://david-dm.org/decisively/wink-jaro-distance?type=dev)
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
 **wink-jaro-distance** is a part of **[wink](https://www.npmjs.com/~sanjaya)**, which is a family of Machine Learning NPM packages. They consist of simple and/or higher order functions that can be combined with NodeJS `stream` and `child processes` to create recipes for analytics driven business solutions.
 
-It is a name matching algorithm that is often used during de-duplication. It computes the similarity and distance between two strings by taking into account the insertions, deletions and transpositions.
+Computes distance and similarity between 2 strings using Jaro Distance Algorithm by taking into account the insertions, deletions and transpositions. It is often used during de-duplication of short strings such as names.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Use **[npm](https://www.npmjs.com/package/wink-jaro-distance)** to install:
 
     npm install wink-jaro-distance --save
 
-## Usage
+## Example [![Build Status](https://badge.runkitcdn.com/wink-jaro-distance.svg)](https://npm.runkit.com/wink-jaro-distance)
 
 ```javascript
 // Load Jaro Distance Function
@@ -41,17 +41,24 @@ console.log( jaro( 'abcdef', 'fedcba'  ) );
 
 ### jaro
 
-Computes Jaro similarity between strings `s1` and `s2`.
+Computes Jaro distance and similarity between strings `s1` and `s2`.
 
-Reference: UNIMATCH:
-[A Record Linkage System : Users Manual pp 104 avaialble](https://books.google.co.in/books?id=Ahs9TABe61oC).
+Original Reference: UNIMATCH:
+[A Record Linkage System: Users Manual pp 104.](https://books.google.co.in/books?id=Ahs9TABe61oC)
 
 **Parameters**
 
--   `s1` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** First string
--   `s2` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Second string
+-   `s1` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** — the first string.
+-   `s2` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** — the second string.
 
-Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Resulting object with the keys `distance` and `similarity`
+**Examples**
+
+```javascript
+// returns { distance: 0.08333333333333337, similarity: 0.9166666666666666 }
+jaro( 'daniel', 'danielle' );
+```
+
+Returns **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** containing `distance` and `similarity` values between 0 and 1.
 
 ## Need Help?
 

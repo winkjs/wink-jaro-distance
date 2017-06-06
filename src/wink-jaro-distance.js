@@ -25,16 +25,21 @@
 // Because we want to logically group the variables.
 /* eslint sort-vars: 0 */
 
-// #### Jaro
+// ### Jaro
 /**
- * Computes Jaro similarity between strings `s1` and `s2`.
  *
- * Reference: UNIMATCH:
- * [A Record Linkage System : Users Manual pp 104 avaialble](https://books.google.co.in/books?id=Ahs9TABe61oC).
+ * Computes Jaro distance and similarity between strings `s1` and `s2`.
  *
- * @param {String} s1 First string
- * @param {String} s2 Second string
- * @return {Object} Resulting object with the keys `distance` and `similarity`
+ * Original Reference: UNIMATCH:
+ * [A Record Linkage System: Users Manual pp 104.](https://books.google.co.in/books?id=Ahs9TABe61oC)
+ *
+ * @arg {string} s1 — the first string.
+ * @arg {string} s2 — the second string.
+ * @return {object} - containing `distance` and `similarity` values between 0 and 1.
+ *
+ * @example
+ * // returns { distance: 0.08333333333333337, similarity: 0.9166666666666666 }
+ * jaro( 'daniel', 'danielle' );
  */
 var jaro = function ( s1, s2 ) {
   // On the basis of the length of `s1` and `s2`, the shorter length string will
