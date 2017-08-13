@@ -33,8 +33,8 @@
  * Original Reference: UNIMATCH:
  * [A Record Linkage System: Users Manual pp 104.](https://books.google.co.in/books?id=Ahs9TABe61oC)
  *
- * @arg {string} s1 — the first string.
- * @arg {string} s2 — the second string.
+ * @param {string} s1 — the first string.
+ * @param {string} s2 — the second string.
  * @return {object} - containing `distance` and `similarity` values between 0 and 1.
  *
  * @example
