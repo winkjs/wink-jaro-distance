@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/decisively/wink-jaro-distance.git"
+    "url": "git+https://github.com/winkjs/wink-jaro-distance.git"
   },
   "author": "Sanjaya Kumar Saxena",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/decisively/wink-jaro-distance/issues"
+    "url": "https://github.com/winkjs/wink-jaro-distance/issues"
   },
-  "homepage": "https://github.com/decisively/wink-jaro-distance#readme",
+  "homepage": "https://github.com/winkjs/wink-jaro-distance#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.15",

@@ -2,7 +2,7 @@
 
 > An Implementation of [Jaro Distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance#Jaro_distance) Algorithm by Matthew A. Jaro
 
-### [![Build Status](https://api.travis-ci.org/decisively/wink-jaro-distance.svg?branch=master)](https://travis-ci.org/decisively/wink-jaro-distance) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-jaro-distance/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-jaro-distance?branch=master) [![Inline docs](http://inch-ci.org/github/decisively/wink-jaro-distance.svg?branch=master)](http://inch-ci.org/github/decisively/wink-jaro-distance) [![devDependencies Status](https://david-dm.org/decisively/wink-jaro-distance/dev-status.svg)](https://david-dm.org/decisively/wink-jaro-distance?type=dev)
+### [![Build Status](https://api.travis-ci.org/winkjs/wink-jaro-distance.svg?branch=master)](https://travis-ci.org/winkjs/wink-jaro-distance) [![Coverage Status](https://coveralls.io/repos/github/winkjs/wink-jaro-distance/badge.svg?branch=master)](https://coveralls.io/github/winkjs/wink-jaro-distance?branch=master) [![Inline docs](http://inch-ci.org/github/winkjs/wink-jaro-distance.svg?branch=master)](http://inch-ci.org/github/winkjs/wink-jaro-distance) [![devDependencies Status](https://david-dm.org/winkjs/wink-jaro-distance/dev-status.svg)](https://david-dm.org/winkjs/wink-jaro-distance?type=dev)
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
@@ -62,7 +62,7 @@ Returns **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 ## Need Help?
 
-If you spot a bug and the same has not yet been reported, raise a new [issue](https://github.com/decisively/wink-jaro-distance/issues) or consider fixing it and sending a pull request.
+If you spot a bug and the same has not yet been reported, raise a new [issue](https://github.com/winkjs/wink-jaro-distance/issues) or consider fixing it and sending a pull request.
 
 ## Copyright & License
 
