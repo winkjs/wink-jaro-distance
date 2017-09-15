@@ -6,9 +6,9 @@
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
-**wink-jaro-distance** is a part of **[wink](https://www.npmjs.com/~sanjaya)**, which is a family of Machine Learning NPM packages. They consist of simple and/or higher order functions that can be combined with NodeJS `stream` and `child processes` to create recipes for analytics driven business solutions.
+De-duplicate short strings such as names by computing similarity and distance between a pair of strings using **`wink-jaro-distance`**.  It is a part of _[wink](https://www.npmjs.com/~sanjaya)_ — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
 
-Computes distance and similarity between 2 strings using Jaro Distance Algorithm by taking into account the insertions, deletions and transpositions. It is often used during de-duplication of short strings such as names.
+It is an implementation of Jaro Distance Algorithm that determines the similarity/distance by taking into account the insertions, deletions and transpositions.
 
 ## Installation
 
