@@ -1,6 +1,6 @@
 {
   "name": "wink-jaro-distance",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An Implementation of Jaro Distance Algorithm by Matthew A. Jaro",
   "keywords": [
     "Jaro",
