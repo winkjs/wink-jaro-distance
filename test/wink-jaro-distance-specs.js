@@ -45,6 +45,12 @@ describe( 'jaro()', function () {
     { whenInputIs: [ 'abcd', 'dcba' ], expectedOutputIs: { similarity: 0.5, distance: 0.5 } },
     { whenInputIs: [ 'washington', 'notgnihsaw' ], expectedOutputIs: { similarity: 0.43333333333333335, distance: 1 - 0.43333333333333335 } },
     { whenInputIs: [ 'washington', 'washingtonx' ], expectedOutputIs: { similarity: 0.9696969696969697, distance: 1 - 0.9696969696969697 } },
+    // No match case
+    { whenInputIs: [ 'sat', 'urn' ], expectedOutputIs: { similarity: 0, distance: 1 } },
+    // Empty string case
+    { whenInputIs: [ '', '' ], expectedOutputIs: { similarity: 1, distance: 0 } },
+    // One of them is Empty
+    { whenInputIs: [ '', 'urn' ], expectedOutputIs: { similarity: 0, distance: 1 } },
   ];
 
   tests.forEach( function ( t ) {

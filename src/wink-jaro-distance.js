@@ -38,8 +38,10 @@
  * @return {object} - containing `distance` and `similarity` values between 0 and 1.
  *
  * @example
- * // returns { distance: 0.08333333333333337, similarity: 0.9166666666666666 }
  * jaro( 'daniel', 'danielle' );
+ * // -> { distance: 0.08333333333333337, similarity: 0.9166666666666666 }
+ * jaro( 'god', 'father' );
+ * // -> { distance: 1, similarity: 0 }
  */
 var jaro = function ( s1, s2 ) {
   // On the basis of the length of `s1` and `s2`, the shorter length string will
@@ -104,8 +106,10 @@ var jaro = function ( s1, s2 ) {
     }
   }
   transposes /= 2;
-  // Compute similarity.
-  smlrty = ( ( matches / shortLen ) + ( matches / longLen ) + ( ( matches - transposes ) / matches ) ) / 3;
+  // Compute similarity; if no `matches` means similarity is 0!
+  smlrty = ( matches === 0 ) ?
+            0 :
+            ( ( matches / shortLen ) + ( matches / longLen ) + ( ( matches - transposes ) / matches ) ) / 3;
   return {
     distance: 1 - smlrty,
     similarity: smlrty

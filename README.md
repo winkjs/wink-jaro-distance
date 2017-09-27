@@ -54,8 +54,10 @@ Original Reference: UNIMATCH:
 **Examples**
 
 ```javascript
-// returns { distance: 0.08333333333333337, similarity: 0.9166666666666666 }
 jaro( 'daniel', 'danielle' );
+// -> { distance: 0.08333333333333337, similarity: 0.9166666666666666 }
+jaro( 'god', 'father' );
+// -> { distance: 1, similarity: 0 }
 ```
 
 Returns **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** containing `distance` and `similarity` values between 0 and 1.
