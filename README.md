@@ -6,7 +6,7 @@
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
-De-duplicate short strings such as names by computing similarity and distance between a pair of strings using **`wink-jaro-distance`**.  It is a part of _[wink](https://www.npmjs.com/~sanjaya)_ — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
+De-duplicate short strings such as names by computing similarity and distance between a pair of strings using **`wink-jaro-distance`**.  It is a part of [wink](https://www.npmjs.com/~sanjaya) — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
 
 It is an implementation of Jaro Distance Algorithm that determines the similarity/distance by taking into account the insertions, deletions and transpositions.
 
@@ -72,7 +72,7 @@ If you spot a bug and the same has not yet been reported, raise a new [issue](ht
 
 ## Copyright & License
 
-**wink-jaro-distance** is copyright 2017 GRAYPE Systems Private Limited.
+**wink-jaro-distance** is copyright 2017 [GRAYPE Systems Private Limited](http://graype.in/).
 
 It is licensed under the under the terms of the GNU Affero General Public License as published by the Free
 Software Foundation, version 3 of the License.
