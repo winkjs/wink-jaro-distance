@@ -1,18 +1,18 @@
 # wink-jaro-distance
 
-> An Implementation of [Jaro Distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance#Jaro_distance) Algorithm by Matthew A. Jaro
+An Implementation of [Jaro Distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance#Jaro_distance) Algorithm by Matthew A. Jaro
 
 ### [![Build Status](https://api.travis-ci.org/winkjs/wink-jaro-distance.svg?branch=master)](https://travis-ci.org/winkjs/wink-jaro-distance) [![Coverage Status](https://coveralls.io/repos/github/winkjs/wink-jaro-distance/badge.svg?branch=master)](https://coveralls.io/github/winkjs/wink-jaro-distance?branch=master) [![Inline docs](http://inch-ci.org/github/winkjs/wink-jaro-distance.svg?branch=master)](http://inch-ci.org/github/winkjs/wink-jaro-distance) [![devDependencies Status](https://david-dm.org/winkjs/wink-jaro-distance/dev-status.svg)](https://david-dm.org/winkjs/wink-jaro-distance?type=dev)
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
-De-duplicate short strings such as names by computing similarity and distance between a pair of strings using **`wink-jaro-distance`**.  It is a part of [wink](https://www.npmjs.com/~sanjaya) — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
+De-duplicate short strings such as names by computing similarity and distance between a pair of strings using **`wink-jaro-distance`**.  It is a part of [wink](http://winkjs.org/) — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
 
 It is an implementation of Jaro Distance Algorithm that determines the similarity/distance by taking into account the insertions, deletions and transpositions.
 
 ## Installation
 
-Use **[npm](https://www.npmjs.com/package/wink-jaro-distance)** to install:
+Use [npm](https://www.npmjs.com/package/wink-jaro-distance) to install:
 
     npm install wink-jaro-distance --save
 
